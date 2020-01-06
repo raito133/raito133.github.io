@@ -1,0 +1,99 @@
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+/*Ciało strony*/
+body {
+    font-family: 'Ibarra Real Nova', serif; 
+    background-color: hsl(226, 49%, 57%);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    box-sizing: border-box; /* Po dodaniu paddingu nadal zawarty w 100 px */
+    margin: 0px;
+
+}
+
+/*Styl containera z obrazkami z odsyłaczami do innych stron*/
+.links{
+    margin: 4% 30% 1%; /* Marginesy */
+    display: flex; /*Sposób wyświetlania*/
+    flex-wrap: nowrap; /* Bez zmiany szerokości */
+    justify-content: space-between; /* Równe rozmieszczenie na danej sekcji */
+}
+
+/*Box z obrazkiem linkujący do innej strony*/
+.linkBox{
+    margin: 0 15px 40px;
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+/*Obrazek w boxie*/
+.image{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*Obrazek wyświetlajacy się po prawej stronie, nie łamiący tekstu*/
+.imageFloat{
+    float: right;
+    margin-left: 5%;
+}
+
+/*Styl odpowiadający za nakładkę gdy najedzie się na box*/
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Styl odpowiadający za przezroczystość nakładki*/
+.linkBox:hover .overlay{
+    opacity: 1;
+}
+
+/*Styl odpowiadający za tekst wyświetlający się na nakładce*/
+.hoverText{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/*Styl containera z tekstem na stronie głównej*/
+.textBoxTitle{
+    font-family: 'Ubuntu', sans-serif;
+    display: flexbox;
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgb(146, 28, 28);
+    height: 250px;
+    color: rgb(238, 255, 0);
+    margin: 0 auto;
+}
+
+/*Styl containera z tekstem na podstronie*/
+.textBoxCentral{
+    display: flexbox;
+    padding: 40px;
+    text-align: left;
+    background-color: rgb(146, 28, 28);
+    height: auto;
+    color: rgb(238, 255, 0);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

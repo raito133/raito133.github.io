@@ -1,0 +1,87 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+        <title>Blog o Mario - quiz</title>
+        <link rel="stylesheet" href="../styles/master.css" />
+    </head>
+    <body>
+
+        <div class="textBoxCentral">
+            <!-- Link do strony głównej -->
+            <a href="../index.html"><p>Powrót do strony głównej</p></a> 
+            <!-- Przycisk rozjaśniający stronę-->
+            <button id="buttonLightUp">Rozjaśnij stronę</button>
+            <!-- Zestaw pytań-->
+            <p> 1. W którym roku zostało wydane Super Mario Bros. 2?</p>
+            <ul>
+                <input type="radio" name="question1" value="1986">
+                <label>1986</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question1" value="1982">
+                <label>1982</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question1" value="1988" class="answer">
+                <label>1988</label>
+            </ul>
+
+            <p> 2. Która część wprowadziła cztery możliwe postacie do gry?</p>
+            <ul>
+                <input type="radio" name="question2" value = "Super Mario Bros.">
+                <label for="Super Mario Bros.">Super Mario Bros.</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question2" value="Super Mario Bros.: Lost Levels">
+                <label for="Super Mario Bros.: Lost Levels">Super Mario Bros.: Lost Levels</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question2" class="answer" value="Super Mario Bros. 2" class="answer">
+                <label for="Super Mario Bros. 2">Super Mario Bros. 2</label>
+            </ul>
+
+            <p> 3. Ile jest możliwych bonusów do zebrania w pierwszej odsłonie gry?</p>
+            <ul>
+                <input type="radio" name="question3" value= "3">
+                <label for="3">3</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question3" value = "4">
+                <label for="4">4</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question3" value = "5" class="answer">
+                <label for="5">5</label>
+            </ul>
+
+            <p> 4. Jaka część gry została przedstawiona na obrazku?</p>
+            <img src="../images/marioSMB3.png" alt="Mario 3" class="imageFloat">
+            <ul>
+                <input type="radio" name="question4" value="Super Mario Bros.">
+                <label for="Super Mario Bros.">Super Mario Bros.</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question4" value ="Super Mario Bros.: Lost Levels">
+                <label for="Super Mario Bros.: Lost Levels">Super Mario Bros.: Lost Levels</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question4" value="Super Mario Bros. 2">
+                <label for="Super Mario Bros. 2">Super Mario Bros. 2</label>
+            </ul>
+            <ul>
+                <input type="radio" name="question4" value = "Super Mario Bros. 3" class="answer">
+                <label for="Super Mario Bros. 3">Super Mario Bros. 3</label>
+            </ul>
+            <!-- Ten przycisk oblicza ile odpowiedzi było poprawnych -->
+            <button id ="submit">Sprawdź wynik</button>
+        </form>
+
+
+
+        </div>
+        <!-- Skrypt -->
+        <script charset="utf-8" src="../scripts/quiz.js"></script>
+    </body>
+</html>
