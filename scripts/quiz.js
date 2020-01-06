@@ -6,9 +6,9 @@ const submitButton = document.getElementById("submit");
 const correctAnswer = document.getElementsByClassName("answer");
 
 //Alert informujący o czasie
-alert("Uwaga, na rozwiązanie Quizu masz tylko 10 sekund!");
+alert("Uwaga, na rozwiązanie Quizu masz tylko 30 sekund!");
 //Po 10 sekundach uruchamiana jest funkcja timeUp()
-setTimeout(timeUp, 10000)
+setTimeout(timeUp, 30000)
 
 //Po wciśnięci przycisku rozjaśnienia zmieniane są kolory
 button.addEventListener('click', function(e){
